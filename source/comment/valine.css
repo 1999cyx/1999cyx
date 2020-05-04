@@ -1,0 +1,39 @@
+.v {
+    background: -moz-linear-gradient(45deg, rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+    background: linear-gradient(to 45deg, rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+    border-radius: 20px;
+}
+
+.v .veditor {
+    min-height: 10rem;
+    background-image: url(https://s1.ax1x.com/2020/03/24/8LLItH.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgba(255,255,255,0);
+    resize: none;
+}
+
+.v .vsubmit.vbtn {
+    color: #D4DFE6;
+    background: #2a93d4;
+    position: relative;
+    right: 10px;
+}
+
+.v .vinput {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.v .vcards .vcard .vh .vhead .vsys {
+    background: #add9d8;
+}
+
+.v .vcards .vcard .vh .vmeta .vat {
+    color: #D4DFE6;
+    background-color: #2a93d4;
+    position: relative;
+    right: 10px;
+}

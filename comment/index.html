@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>勒是雾都</title>
+    <link rel="icon" href="../source/img/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../source/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../source/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="../source/css/style.css">
+    <!-- ico -->
+    <link rel="stylesheet" href="../source/css/font-awesome.min.css">
+    <!-- animate.css -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.css" rel="stylesheet">
+    <!-- layui.css -->
+    <link rel="stylesheet" href="../source/layui/css/layui.css" media="all">
+    <!-- 一言 -->
+    <script type="text/javascript"
+        src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=&encode=js&fun=sync&source="></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+
+            <div class="container">
+
+                <!-- 主题 -->
+                <a class="navbar-brand" href="#">重庆</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- 导航栏链接 -->
+                    <style>
+                        .fa {
+                            color: #2694ab;
+                        }
+                    </style>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../"><i class="fa fa-fort-awesome faa-shake"></i> 主页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/landscape/"><i class="fa fa-street-view"></i> 景色</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/food/"><i class="fa fa-cutlery"></i> 美食</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/hero/"><i class="fa fa-heartbeat"></i> 英雄</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fa fa-pencil-square-o faa-tada"></i> 留言
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about/"><i class="fa fa-meetup"></i> 关于</a>
+                        </li>
+                    </ul>
+
+                    <!-- 社交链接  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/1999cyx" target="_blank" title="github">
+                                <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:1755899681@qq.com" target="_blank" title="邮箱">
+                                <i class="fa fa-envelope fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://blog.csdn.net/qq_44036990" target="_blank" title="CSDN">
+                                <i class="fa fa-star fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 重庆 -->
+        <div id="view-mask" class="view">
+
+            <div class="mask rgba-black-strong">
+                <!-- 添加了.container-fluid 容器以利用栅格进行布局 -->
+                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+                    <!-- 新添加的 div, 表示栅格中的行 -->
+                    <div class="row d-flex justify-content-center text-center">
+                        <!-- 新添加的 div, 表示栅格中的列 -->
+                        <div class="col-md-10 wow rotateIn" data-wow-offset="10">
+                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">留言</h2>
+                            <hr class="hr-light">
+                            <h4 class="white-text my-4" id="showStr1"></h4>
+                            <!-- 一言 -->
+                            <!-- 逐步输出文字 -->
+                            <div style="display:none" id="hitokoto"><script>hitokoto()</script>
+                            </div>
+                            <script>
+                                var index = 0;
+                                var str = document.getElementById("hitokoto").innerText;
+                                str = str.substring(10, str.length)//裁剪hitokoto()字样
+                                function type() {
+                                    if (index == str.length) {
+                                        index = 0;
+                                    }
+                                    document.getElementById("showStr1").innerText = str.substring(0, index++);
+                                }
+                                setInterval(type, 200); //通过定时器来让文字逐步显示
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--主体-->
+    <main class="mt-5">
+        <div class="container">
+            <!-- 评论区 -->
+            <section id="my-comment" class="text-center">
+                <!-- head -->
+                <h1 class="mb-5"><strong>留言板</strong></h1>
+                <!--简介-->
+                <div class="row d-flex justify-content-center mb-4">
+                    <div class="col-md-8">
+                        <p><strong>
+                            </strong></p>
+                    </div>
+                </div>
+
+
+                <img class="ly-img wow zoomInDown" src="../source/comment/comment.jpg" alt="First slide"
+                    data-wow-offset="10">
+                <img class="ly-img wow zoomInDown" src="../source/comment/comment(2).jpg" alt="First slide"
+                    data-wow-offset="10">
+                <div style="text-align:center;"><span class="with-love">
+                        <i class="fa fa-heart" style="color: #ffc0cb;"></i>
+                    </span>欢迎各位在评论区留言😜~<span class="with-love">
+                        <i class="fa fa-heart" style="color: #ffc0cb;"></i>
+                    </span>
+                </div>
+                <br>
+
+                <!-- 留言区内容 -->
+                <div id="vcomments"></div>
+                <!-- 先引入样式,从footer提前 -->
+                <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+                <!-- <script src="//unpkg.com/valine/dist/Valine.min.js"></script> -->
+                <!-- <script src="https://cdn.jsdelivr.net/gh/1999cyx/cdn@2.0.3/js/Valine144.min.js"></script> -->
+                <script src="../source/comment/Valine144.min.js"></script>
+
+                <!-- 评论框美化 -->
+                <link rel="stylesheet" href="../source/comment/valine.css">
+
+
+                <script>
+                    new Valine({
+                        el: '#vcomments',
+                        lang: 'zh-cn',
+                        admin_email: '1755899681@qq.com',//博主邮箱
+                        appId: 'f9sgLnWeRLh3yI6YailrduHo-gzGzoHsz',
+                        appKey: 'YnRwrIg89b9BrkYe6y03vr2I',
+                        path: window.location.pathname,
+                        comment_count: true,
+                        notify: false, // 邮件提醒!使用第三方就不要添加这个!!
+                        verify: true, //验证码
+                        avatar: 'wavatar',//小怪物头像
+                        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+                    });
+                    // 点击回复直接评论
+                    $(document).ready(function () {
+                        //$('.vemoji-btn').text('😀');
+                        $("#vcomments").on('click', 'span.vat', function () {
+                            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                            $('textarea#veditor').focus();
+                        });
+                        if (e.target.classList.contains('vsys')) {
+                            const chometype = document.getElementById(".vsys");
+                            console.log(chometype);
+                        };
+                    })
+                </script>
+            </section>
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+        <div class="footer-copyright text-center py-3">
+            <span>
+                云开、见月明
+                <i class="fa fa-university" aria-hidden="true" style="color: #ffc0cb;display:inline-block"></i>
+                Copyright &copy; 2020 by 云开 All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="../source/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../source/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../source/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../source/js/mdb.min.js"></script>
+    <!-- wow.js -->
+    <script type="text/javascript" src="../source/js/wow.min2.js"></script>
+    <!-- 樱花飘落 -->
+    <script type="text/javascript" src="../source/js/sakura.js"></script>
+    <!-- 鼠标移动特效 -->
+    <script type="text/javascript" src="../source/js/fairyDustCursor.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

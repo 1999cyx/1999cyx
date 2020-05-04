@@ -1,0 +1,158 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+html,
+body,
+header,
+#view-mask {
+    height: 100%;
+}
+
+html,
+body,
+header,
+#food-mask {
+    height: 100%;
+}
+
+html,
+body,
+header,
+#hero-mask {
+    height: 100%;
+}
+
+html,
+body,
+header,
+#comment-mask {
+    height: 100%;
+}
+
+html,
+body,
+header,
+#about-mask {
+    height: 100%;
+}
+
+#intro {
+    background: url("../img/timg.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+
+#view-mask {
+    background: url("../img/timg.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+
+#food-mask {
+    background: url("../img/timg.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+
+#hero-mask {
+    background: url("../img/timg.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+
+#comment-mask {
+    background: url("../img/timg.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+
+#about-mask {
+    background: url("../img/timg.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+
+.navbar {
+    background: -moz-linear-gradient(45deg, rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+    background: linear-gradient(to 45deg, rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+}
+
+.col-md-10 {
+    min-width: 200px;
+}
+
+.jd-img {
+    margin: 0 auto;
+    padding: 5px;
+    width: 350px;
+    height: 230px;
+    transition:all 0.8s ease-in-out;
+    -webkit-transition:all 0.8s ease-in-out;
+    -moz-transition:all 0.8s ease-in-out;
+    -ms-transition:all 0.8s ease-in-out;
+    -o-transition:all 0.8s ease-in-out;
+}
+
+.jd-img:hover {
+    transform:rotate(720deg) scale(1.2,1.2);
+    -webkit-transform:rotate(720deg) scale(1.2,1.2);
+    -moz-transform:rotate(720deg) scale(1.2,1.2);
+    -ms-transform:rotate(720deg) scale(1.2,1.2);
+    -o-transform:rotate(720deg) scale(1.2,1.2);
+}
+
+.food-photo {
+    margin: 0 auto;
+    padding: 5px;
+    width: 350px;
+    height: 230px;
+}
+
+.food-photo:hover {
+    transform:rotate(720deg) scale(1.2,1.2);
+    -webkit-transform:rotate(720deg) scale(1.2,1.2);
+    -moz-transform:rotate(720deg) scale(1.2,1.2);
+    -ms-transform:rotate(720deg) scale(1.2,1.2);
+    -o-transform:rotate(720deg) scale(1.2,1.2);
+}
+
+.layui-tab-title {
+    background: -moz-linear-gradient(45deg, rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+    background: linear-gradient(to 45deg, rgba(217,217,243,1), rgba(187,222,214,1) 100%);
+}
+
+.layui-tab {
+    background: -moz-linear-gradient(45deg, rgba(250,227,217,1), rgba(187,222,214,1) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(250,227,217,1), rgba(187,222,214,1) 100%);
+    background: linear-gradient(to 45deg, rgba(250,227,217,1), rgba(187,222,214,1) 100%);
+}
+
+.btn {
+    background: -moz-linear-gradient(45deg, rgba(250,227,217,1), rgba(187,222,214,1) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(250,227,217,1), rgba(187,222,214,1) 100%);
+    background: linear-gradient(to 45deg, rgba(250,227,217,1), rgba(187,222,214,1) 100%);
+}
+
+.hero-btn {
+    background: -moz-linear-gradient(45deg, rgba(52,132,152,1), rgba(91,209,215,1) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(52,132,152,1), rgba(91,209,215,1) 100%);
+    background: linear-gradient(to 45deg, rgba(52,132,152,1), rgba(91,209,215,1) 100%);
+}
